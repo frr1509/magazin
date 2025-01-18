@@ -24,6 +24,6 @@
 
 Схема для редакс стора (на клиенте):
 
--   user id / login / roleId
+-   user id / login / roleId / session
 -   products массив product: id / name / price / imageUrl / publishedAt / count / feedbacksCount
 -   product: id / name / imageUrl / count / price / feedbacks: массив feedback: id / author / content / publishedAt
