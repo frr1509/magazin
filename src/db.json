@@ -1,0 +1,77 @@
+{
+    "users": [
+        {
+            "id": "001",
+            "login": "alexsey",
+            "password": "qwerty123",
+            "register_at": "15.09.2024",
+            "role_id": "0"
+        }
+    ],
+    "roles": [
+        {
+            "id": "0",
+            "name": "Администратор"
+        },
+        {
+            "id": "1",
+            "name": "Модератор"
+        },
+        {
+            "id": "2",
+            "name": "Покупатель"
+        },
+        {
+            "id": "3",
+            "name": "Гость"
+        }
+    ],
+    "products": [
+        {
+            "id": "1",
+            "name": "Мягкая игрушка",
+            "price": "500",
+            "image_url": "https://example.com/toy1.jpg",
+            "category": "Игрушки",
+            "count": "20",
+            "published_at": "2023-10-01"
+        },
+        {
+            "id": "2",
+            "name": "Смартфон",
+            "price": "25000",
+            "image_url": "https://example.com/smartphone.jpg",
+            "category": "Электроника",
+            "count": "15",
+            "published_at": "2023-09-15"
+        },
+        {
+            "id": "3",
+            "name": "Книга",
+            "price": "700",
+            "image_url": "https://example.com/book.jpg",
+            "category": "Книги",
+            "count": "30",
+            "published_at": "2023-08-20"
+        },
+        {
+            "id": "4",
+            "name": "Кроссовки",
+            "price": "4500",
+            "image_url": "https://example.com/sneakers.jpg",
+            "category": "Обувь",
+            "count": "25",
+            "published_at": "2023-10-05"
+        },
+        {
+            "id": "5",
+            "name": "Часы",
+            "price": "12000",
+            "image_url": "https://example.com/watch.jpg",
+            "category": "Аксессуары",
+            "count": "10",
+            "published_at": "2023-09-30"
+        }
+    ],
+    "feedback": []
+}
