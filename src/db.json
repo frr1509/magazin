@@ -1,77 +1,168 @@
 {
-    "users": [
-        {
-            "id": "001",
-            "login": "alexsey",
-            "password": "qwerty123",
-            "register_at": "15.09.2024",
-            "role_id": "0"
-        }
-    ],
-    "roles": [
-        {
-            "id": "0",
-            "name": "Администратор"
-        },
-        {
-            "id": "1",
-            "name": "Модератор"
-        },
-        {
-            "id": "2",
-            "name": "Покупатель"
-        },
-        {
-            "id": "3",
-            "name": "Гость"
-        }
-    ],
-    "products": [
-        {
-            "id": "1",
-            "name": "Мягкая игрушка",
-            "price": "500",
-            "image_url": "https://example.com/toy1.jpg",
-            "category": "Игрушки",
-            "count": "20",
-            "published_at": "2023-10-01"
-        },
-        {
-            "id": "2",
-            "name": "Смартфон",
-            "price": "25000",
-            "image_url": "https://example.com/smartphone.jpg",
-            "category": "Электроника",
-            "count": "15",
-            "published_at": "2023-09-15"
-        },
-        {
-            "id": "3",
-            "name": "Книга",
-            "price": "700",
-            "image_url": "https://example.com/book.jpg",
-            "category": "Книги",
-            "count": "30",
-            "published_at": "2023-08-20"
-        },
-        {
-            "id": "4",
-            "name": "Кроссовки",
-            "price": "4500",
-            "image_url": "https://example.com/sneakers.jpg",
-            "category": "Обувь",
-            "count": "25",
-            "published_at": "2023-10-05"
-        },
-        {
-            "id": "5",
-            "name": "Часы",
-            "price": "12000",
-            "image_url": "https://example.com/watch.jpg",
-            "category": "Аксессуары",
-            "count": "10",
-            "published_at": "2023-09-30"
-        }
-    ],
-    "feedback": []
+  "users": [
+    {
+      "id": "001",
+      "login": "alexsey",
+      "password": "qwerty123",
+      "register_at": "15.09.2024",
+      "role_id": 0
+    },
+    {
+      "id": "24",
+      "login": "qqqqq",
+      "password": "qweqwe123",
+      "registred_at": "2039-04-06 16:23",
+      "role_id": 2
+    },
+    {
+      "id": "cf2c",
+      "login": "asdsad",
+      "password": "qweqwe123",
+      "register_at": "2058-02-26 06:19",
+      "role_Id": 2
+    },
+    {
+      "id": "3011",
+      "login": "lexa",
+      "password": "qweqwe123",
+      "register_at": "2043-12-31 05:28",
+      "role_Id": 2
+    },
+    {
+      "id": "9112",
+      "login": "qqqw",
+      "password": "qweqwe123",
+      "register_at": "2046-08-11 01:12",
+      "role_Id": 2
+    },
+    {
+      "id": "fc42",
+      "login": "qqq3",
+      "password": "qweqwe123",
+      "register_at": "2035-05-01 14:17",
+      "role_Id": 2
+    },
+    {
+      "id": "a46e",
+      "login": "qqq34",
+      "password": "qweqwe123",
+      "register_at": "2045-10-04 12:04",
+      "role_Id": 2
+    },
+    {
+      "id": "83b5",
+      "login": "alexsey4",
+      "password": "qweqwe123",
+      "registred_at": "2056-11-19 13:59",
+      "role_id": 2
+    },
+    {
+      "id": "0713",
+      "login": "qqq344",
+      "password": "qweqwe123",
+      "register_at": "2046-04-26 01:03",
+      "role_Id": 2
+    },
+    {
+      "id": "f7ae",
+      "login": "qqq3444",
+      "password": "qweqwe123",
+      "register_at": "2055-03-18 12:25",
+      "role_Id": 2
+    },
+    {
+      "id": "8623",
+      "login": "qqq34444",
+      "password": "qweqwe123",
+      "register_at": "2064-06-10 22:14",
+      "role_Id": 2
+    },
+    {
+      "id": "8edd",
+      "login": "qqq344441",
+      "password": "qweqwe123",
+      "register_at": "2061-02-06 13:46",
+      "role_Id": 2
+    },
+    {
+      "id": "321a",
+      "login": "qqq3444411",
+      "password": "qweqwe123",
+      "register_at": "2055-10-31 11:22",
+      "role_Id": 2
+    },
+    {
+      "id": "87c0",
+      "login": "qqq3444411d",
+      "password": "qweqwe123",
+      "register_at": "2054-12-15 17:29",
+      "role_Id": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": "0",
+      "name": "Администратор"
+    },
+    {
+      "id": "1",
+      "name": "Модератор"
+    },
+    {
+      "id": "2",
+      "name": "Покупатель"
+    },
+    {
+      "id": "3",
+      "name": "Гость"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Мягкая игрушка",
+      "price": "500",
+      "image_url": "https://example.com/toy1.jpg",
+      "category": "Игрушки",
+      "count": "20",
+      "published_at": "2023-10-01"
+    },
+    {
+      "id": "2",
+      "name": "Смартфон",
+      "price": "25000",
+      "image_url": "https://example.com/smartphone.jpg",
+      "category": "Электроника",
+      "count": "15",
+      "published_at": "2023-09-15"
+    },
+    {
+      "id": "3",
+      "name": "Книга",
+      "price": "700",
+      "image_url": "https://example.com/book.jpg",
+      "category": "Книги",
+      "count": "30",
+      "published_at": "2023-08-20"
+    },
+    {
+      "id": "4",
+      "name": "Кроссовки",
+      "price": "4500",
+      "image_url": "https://example.com/sneakers.jpg",
+      "category": "Обувь",
+      "count": "25",
+      "published_at": "2023-10-05"
+    },
+    {
+      "id": "5",
+      "name": "Часы",
+      "price": "12000",
+      "image_url": "https://example.com/watch.jpg",
+      "category": "Аксессуары",
+      "count": "10",
+      "published_at": "2023-09-30"
+    }
+  ],
+  "feedback": []
 }

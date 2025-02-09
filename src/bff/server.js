@@ -13,12 +13,19 @@ export const server = {
             };
         }
 
+        if (authPassword !== user.password) {
+            return {
+                error: "Неверный пароль",
+                res: null,
+            };
+        }
+
         return {
             error: null,
             res: {
                 id: user.id,
                 login: user.login,
-                role_id: user.role_id,
+                roleId: user.role_id,
                 session: sessions.create(user),
             },
         };
@@ -34,13 +41,12 @@ export const server = {
         }
 
         const user = await addUser(regLogin, regPassword);
-
         return {
             error: null,
             res: {
                 id: user.id,
                 login: user.login,
-                role_id: user.role_id,
+                roleId: user.role_id,
                 session: sessions.create(user),
             },
         };
