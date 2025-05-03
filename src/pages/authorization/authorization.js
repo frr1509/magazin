@@ -6,10 +6,11 @@ import { Button, H2, Input } from "../../components";
 import { server } from "../../bff";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectUserRoleId, setUser } from "../../store";
 import { Link, Navigate } from "react-router-dom";
-import { ROLE } from "../../constants";
+import { ROLE } from "../../bff/constants";
 import { useResetForm } from "../../hooks";
+import { selectUserRoleId } from "../../selectors";
+import { setUser } from "../../actions";
 
 const AuthSchemaForm = yup.object().shape({
     login: yup
@@ -60,6 +61,7 @@ const AuthorizationContainer = ({ className }) => {
     const errorMessage = formError || serverError;
 
     const StyledLink = styled(Link)`
+        color: #000;
         text-align: center;
         text-decoration: underline;
         margin: 20px 0;
@@ -96,7 +98,7 @@ const AuthorizationContainer = ({ className }) => {
                     placeholder="Пароль..."
                     {...register("password")}
                 ></Input>
-                <Button type="submit" disabled={!!formError}>
+                <Button color="#fff" type="submit" disabled={!!formError}>
                     Авторизация
                 </Button>
                 {errorMessage && <div>{errorMessage}</div>}

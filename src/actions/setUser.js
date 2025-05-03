@@ -1,4 +1,4 @@
-import { ACTION_TYPE } from "./action-types";
+import { ACTION_TYPE } from "./actionTypes";
 
 export const setUser = (user) => ({
     type: ACTION_TYPE.SET_USER,

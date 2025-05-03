@@ -20,11 +20,23 @@ body,
 }
 
 a {
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+}
+
+button {
+    border: none;
+    box-shadow: none;
+    background-color: initial;
+}
+
+input {
+    border: none;
+    background: none;
+    font: inherit;
 }

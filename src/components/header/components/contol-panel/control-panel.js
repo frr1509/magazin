@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { ControlPanelBtn } from "./components";
 import { useDispatch, useSelector } from "react-redux";
+import { ROLE } from "../../../../bff/constants";
+import { Icon } from "../../../icon/icon";
 import {
-    logout,
-    selectSession,
     selectUserLogin,
     selectUserRoleId,
-} from "../../../../store";
-import { ROLE } from "../../../../constants";
-import { Icon } from "../../../icon/icon";
+    selectUserSession,
+} from "../../../../selectors";
+import { logout } from "../../../../actions";
 
 const StyledLink = styled.div`
     &:hover {
@@ -25,13 +25,14 @@ const StyledDiv = styled.div`
     & > div {
         margin: 10px 0 0 0;
     }
+    color: #fff;
 `;
 
 const ControlPanelContainer = ({ className }) => {
     const dispatch = useDispatch();
     const roleId = useSelector(selectUserRoleId);
     const login = useSelector(selectUserLogin);
-    const session = useSelector(selectSession);
+    const session = useSelector(selectUserSession);
     return (
         <div className={className}>
             <ControlPanelBtn icon="fa-shopping-basket" way="/basket">

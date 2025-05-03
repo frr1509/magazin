@@ -6,10 +6,11 @@ import { Button, H2, Input } from "../../components";
 import { server } from "../../bff";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectUserRoleId, setUser } from "../../store";
 import { Navigate } from "react-router-dom";
-import { ROLE } from "../../constants";
 import { useResetForm } from "../../hooks";
+import { selectUserRoleId } from "../../selectors";
+import { setUser } from "../../actions";
+import { ROLE } from "../../bff/constants";
 
 const regSchemaForm = yup.object().shape({
     login: yup
@@ -113,7 +114,7 @@ const RegistrationContainer = ({ className }) => {
                         onChange: () => setServerError(null),
                     })}
                 ></Input>
-                <Button type="submit" disabled={!!formError}>
+                <Button color="#fff" type="submit" disabled={!!formError}>
                     Зарегистрироваться
                 </Button>
                 {errorMessage && <div>{errorMessage}</div>}

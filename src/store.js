@@ -6,7 +6,7 @@ import {
     usersReducer,
     productReducer,
     productsReducer,
-} from "../store";
+} from "./reducers";
 
 const reducer = combineReducers({
     app: appReducer,

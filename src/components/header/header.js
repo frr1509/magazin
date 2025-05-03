@@ -5,7 +5,7 @@ import { Input, Content } from "../../components";
 const HeaderContainer = ({ className }) => {
     return (
         <header className={className}>
-            <Content display="flex" color="#40e0d0" isFocused="true">
+            <Content display="flex" color="#1e2869" isFocused="true">
                 <Logo />
                 <NavigateBtn />
                 <Input placeholder="Найти товар" />
@@ -16,7 +16,7 @@ const HeaderContainer = ({ className }) => {
 };
 
 export const Header = styled(HeaderContainer)`
-    background-color: turquoise;
+    background-color: #1e2869;
     height: 100px;
     display: flex;
     padding: 20px 40px;
