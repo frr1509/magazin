@@ -19,5 +19,5 @@ export const Button = styled(ButtonContainer)`
     border: 2px solid #1e2869;
     display: ${({ display = "block" }) => display};
     color: ${({ color = "#000" }) => color};
-
+    
 `;

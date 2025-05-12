@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom";
-import { Icon } from "../../../../icon/icon";
 import styled from "styled-components";
+import { Icon } from "../../../../icon/icon";
 
-const ControlPanelBtnContainer = ({ className, icon, children, way }) => (
-    <Link className={className} to={`${way}`}>
-        <Icon id={`${icon}`} />
-        <div>{children}</div>
-    </Link>
-);
+const ControlPanelBtnContainer = ({
+    className,
+    icon,
+    children,
+    way,
+    totalProduct,
+}) => {
+    return (
+        <Link className={className} to={`${way}`}>
+            <Icon id={`${icon}`} size="20px" />
+            <div className="text">{children}</div>
+            <div className="product-quantity">{totalProduct}</div>
+        </Link>
+    );
+};
 
 export const ControlPanelBtn = styled(ControlPanelBtnContainer)`
     cursor: pointer;
@@ -17,5 +26,22 @@ export const ControlPanelBtn = styled(ControlPanelBtnContainer)`
     text-align: center;
     & > div {
         margin: 10px 0 0 0;
+    }
+    & .product-quantity {
+        position: fixed;
+        top: 9px;
+        right: 120px;
+        background-color: #fff;
+        color: #1e2869;
+        border-radius: 48%;
+        width: 19px;
+        height: 19px;
+        font-size: 11px;
+        font-weight: 700;
+        display: ${({ totalProduct }) =>
+            totalProduct === 0 ? "none" : "block"};
+    }
+    & .text {
+        font-size: 15px;
     }
 `;

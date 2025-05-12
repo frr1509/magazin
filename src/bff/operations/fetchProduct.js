@@ -1,10 +1,9 @@
 import { getProduct } from "../api";
 
 export const fetchProduct = async (productId) => {
-    const post = await getProduct(productId);
-    console.log(post);
+    const product = await getProduct(productId);
     return {
         error: null,
-        res: post,
+        res: product,
     };
 };

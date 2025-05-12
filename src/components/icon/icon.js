@@ -11,4 +11,9 @@ const IconContainer = ({ className, id, onClick, ...props }) => {
 export const Icon = styled(IconContainer)`
     font-size: ${({ size = "24px" }) => size};
     margin: ${({ margin = "0" }) => margin};
+    color: ${({ color = "#000" }) => color}
+    &:hover {
+        cursor: ${({ onClick }) => (onClick ? "pointer" : "default")};
+        color: ${({ colorHover = "#000" }) => colorHover}
+    }
 `;

@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-const ErrorCountContainer = ({ className, count, errorCountFlag }) => {
-    return <div className={className}>В наличии только: {count}</div>;
+const ErrorCountContainer = ({ className, count, price, errorCountFlag }) => {
+    return (
+        <div className={className}>
+            {price}В наличии только: {count}
+        </div>
+    );
 };
 
 export const ErrorCount = styled(ErrorCountContainer)`
@@ -20,7 +24,6 @@ export const ErrorCount = styled(ErrorCountContainer)`
     color: #000000;
     border-radius: 0;
     background: #d9d9d9;
-    box-shadow: 0px 4px 40px rgb(17 16 16 / 10%);
     margin-left: -240px;
     margin-top: -187.5px;
 `;

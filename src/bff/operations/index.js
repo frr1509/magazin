@@ -2,3 +2,8 @@ export * from "./authorize";
 export * from "./register";
 export * from "./logout";
 export * from "./fetchProduct";
+export * from "./addProductOnUserBasket";
+export * from "./loadProductFromBasket";
+export * from "./setNewQuantity";
+export * from "./removeProductFromBasket";
+export * from "./removeBasket";

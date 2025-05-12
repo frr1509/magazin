@@ -18,6 +18,7 @@ export const register = async (regLogin, regPassword) => {
             id: user.id,
             login: user.login,
             roleId: user.role_id,
+            totalProduct: user.total_product,
             session: sessions.create(user),
         },
     };

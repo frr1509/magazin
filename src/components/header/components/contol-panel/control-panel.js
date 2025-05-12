@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { ROLE } from "../../../../bff/constants";
 import { Icon } from "../../../icon/icon";
 import {
+    selectTotalProduct,
     selectUserLogin,
     selectUserRoleId,
     selectUserSession,
@@ -33,9 +34,21 @@ const ControlPanelContainer = ({ className }) => {
     const roleId = useSelector(selectUserRoleId);
     const login = useSelector(selectUserLogin);
     const session = useSelector(selectUserSession);
+    const totalProduct = useSelector(selectTotalProduct);
+    const onLogout = () => {
+        dispatch(logout(session));
+        sessionStorage.removeItem("userData");
+    };
     return (
         <div className={className}>
-            <ControlPanelBtn icon="fa-shopping-basket" way="/basket">
+            <ControlPanelBtn icon="fa-lock" way="/admin">
+                Админ
+            </ControlPanelBtn>
+            <ControlPanelBtn
+                icon="fa-shopping-cart"
+                way="/basket"
+                totalProduct={totalProduct}
+            >
                 Корзина
             </ControlPanelBtn>
             {roleId === ROLE.GUEST ? (
@@ -44,10 +57,10 @@ const ControlPanelContainer = ({ className }) => {
                 </ControlPanelBtn>
             ) : (
                 <StyledDiv>
-                    <StyledLink onClick={() => dispatch(logout(session))}>
+                    <StyledLink onClick={onLogout}>
                         <Icon id="fa-sign-out" margin="0 0 0 10px" />
                     </StyledLink>
-                    <div>{login}</div>
+                    <div className="name">{login}</div>
                 </StyledDiv>
             )}
         </div>
@@ -55,5 +68,9 @@ const ControlPanelContainer = ({ className }) => {
 };
 
 export const ControlPanel = styled(ControlPanelContainer)`
+    align-items: center;
     display: flex;
+    & .name {
+        font-size: 15px;
+    }
 `;

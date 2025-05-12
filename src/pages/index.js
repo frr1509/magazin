@@ -1,4 +1,5 @@
 export * from "./authorization/authorization";
 export * from "./registration/registration";
 export * from "./product/product";
-export * from "./cart/cart";
+export * from "./basket/basket";
+export * from "./adminPanel/adminPanel";

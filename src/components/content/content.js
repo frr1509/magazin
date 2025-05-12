@@ -7,5 +7,5 @@ export const Content = styled.div`
     align-items: center;
     margin: 0 auto;
     padding: ${({ padding = "0" }) => padding};
-    background-color: ${({ color = "#f1f1f5}" }) => color};
+    background-color: ${({ color = "#ffff}" }) => color};
 `;

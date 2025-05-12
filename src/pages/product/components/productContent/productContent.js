@@ -7,13 +7,41 @@ import {
     Icon,
     Navigate,
 } from "../../../../components";
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+    selectBuyerId,
+    selectCounterErrorFlag,
+    selectNewCounter,
+    selectUserLogin,
+} from "../../../../selectors";
+import { useServerRequest } from "../../../../hooks";
+import { addProductOnUserBasketAsync } from "../../../../actions";
 
 const ProductContentContainer = ({
     className,
     product: { imageUrl, name, count, price, id },
 }) => {
-    const [errorCountFlag, setErrorCountFlag] = useState(false);
+    const erroCounterFlag = useSelector(selectCounterErrorFlag);
+    const counter = useSelector(selectNewCounter);
+    const userId = useSelector(selectBuyerId);
+    const userLogin = useSelector(selectUserLogin);
+    const requestServer = useServerRequest();
+    const dispatch = useDispatch();
+    const addProductOnBasket = () => {
+        dispatch(
+            addProductOnUserBasketAsync(
+                requestServer,
+                counter,
+                userLogin,
+                userId,
+                imageUrl,
+                name,
+                count,
+                price,
+                id,
+            ),
+        );
+    };
     return (
         <div className={className}>
             <Navigate />
@@ -25,16 +53,17 @@ const ProductContentContainer = ({
                 <div className="product-info">
                     <H2>{name}</H2>
                     <div>
-                        <Count
-                            count={count}
-                            setErrorCountFlag={setErrorCountFlag}
-                        />
+                        <Count count={count} />
                         <div className="product-price">
                             Цена: {price}{" "}
                             <Icon id="fa-rub" size="15px" margin="0 0 0 3px" />
                         </div>
                         <div className="product-button">
-                            <Button display="flex" color="#fff">
+                            <Button
+                                display="flex"
+                                color="#fff"
+                                onClick={addProductOnBasket}
+                            >
                                 {<Icon id="fa-cart-plus" margin="0 10px 0 0" />}
                                 В корзину
                             </Button>
@@ -43,7 +72,7 @@ const ProductContentContainer = ({
                     <div>{id}</div>
                 </div>
             </div>
-            <ErrorCount count={count} errorCountFlag={errorCountFlag} />
+            <ErrorCount count={count} errorCountFlag={erroCounterFlag} />
         </div>
     );
 };

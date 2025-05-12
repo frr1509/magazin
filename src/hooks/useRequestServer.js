@@ -12,11 +12,16 @@ export const useServerRequest = () => {
                 "registration",
                 "authorization",
                 "fetchProduct",
+                "addProductOnUserBasket",
+                "loadProductFromBasket",
+                "setNewQuantity",
+                "removeProductFromBasket",
+                "removeBasket",
             ].includes(operation)
                 ? params
                 : [session, ...params];
 
-            return server[operation](request);
+            return server[operation](...request);
         },
         [session],
     );

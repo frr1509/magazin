@@ -5,5 +5,5 @@ const H2Cpntainer = ({ className, children }) => {
 };
 
 export const H2 = styled(H2Cpntainer)`
-    margin: 30px 0 20px 0;
+    margin: ${({ margin = "30px 0 20px 0" }) => margin};
 `;

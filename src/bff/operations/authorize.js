@@ -3,7 +3,6 @@ import { sessions } from "../sessions";
 
 export const authorize = async (authLogin, authPassword) => {
     const user = await getUser(authLogin);
-
     if (!user) {
         return {
             error: "Такого пользователя не существует",
@@ -23,7 +22,8 @@ export const authorize = async (authLogin, authPassword) => {
         res: {
             id: user.id,
             login: user.login,
-            roleId: user.role_id,
+            roleId: user.roleId,
+            totalProduct: user.totalProduct,
             session: sessions.create(user),
         },
     };
