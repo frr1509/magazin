@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {ErrorCount, H2, Navigate } from "../../components";
+import {ErrorCount, H2, NavigateRow } from "../../components";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -26,7 +26,7 @@ const CartBasket = ({ className }) => {
     return (
         <div className={className}>
             <div className="basket-top">
-                <Navigate />
+                <NavigateRow />
                 <div className="basket-delete">
                     <H2 margin="0 0 0 0">Корзина</H2>
                     <BasketDelete userLogin={userLogin} userId={userId}>

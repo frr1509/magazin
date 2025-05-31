@@ -13,7 +13,12 @@ const BaskettotalSumContainer = ({ className, userBasket }) => {
                     <div className="total-sum-text">Итого:</div>
                     <div className="total-sum-price">
                         {totalSum}
-                        <Icon id="fa-rub" size="15px" margin="0 0 0 3px" />
+                        <Icon
+                            id="fa-rub"
+                            size="15px"
+                            margin="0 0 0 3px"
+                            color="#000"
+                        />
                     </div>
                 </div>
                 <Button color="#fff">Офромить заказ</Button>

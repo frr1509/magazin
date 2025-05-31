@@ -9,3 +9,8 @@ export * from "./addProductOnBasket";
 export * from "./resetProductQuantity";
 export * from "./deleteProductFromBasket";
 export * from "./resetTotalProduct";
+export * from "./getProducts";
+export * from "./addProduct";
+export * from "./deleteProduct";
+export * from "./resetProduct";
+export * from "./getCategorys";

@@ -6,7 +6,7 @@
       "password": "qwerty123",
       "register_at": "15.09.2024",
       "role_id": 0,
-      "total_product": 1
+      "total_product": 2
     },
     {
       "id": "3011",
@@ -35,14 +35,44 @@
       "name": "Гость"
     }
   ],
+  "categorys": [
+    {
+      "id": "0",
+      "name": "Игрушки"
+    },
+    {
+      "id": "1",
+      "name": "Электроника"
+    },
+    {
+      "id": "2",
+      "name": "Книги"
+    },
+    {
+      "id": "3",
+      "name": "Обувь"
+    },
+    {
+      "id": "4",
+      "name": "Аксессуары"
+    },
+    {
+      "id": "5",
+      "name": "Одежда"
+    },
+    {
+      "id": "6",
+      "name": "Дом"
+    }
+  ],
   "products": [
     {
       "id": "1",
       "name": "Плюшевый мишка",
-      "price": "500",
+      "price": 500,
       "image_url": "https://plus.unsplash.com/premium_photo-1725075087153-610264ca9cbd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "category": "Игрушки",
-      "count": "20",
+      "count": 20,
       "published_at": "2023-10-01"
     },
     {
@@ -57,10 +87,10 @@
     {
       "id": "3",
       "name": "Книга",
-      "price": "700",
+      "price": 700,
       "image_url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "category": "Книги",
-      "count": "30",
+      "count": 30,
       "published_at": "2023-08-20"
     },
     {
@@ -75,140 +105,89 @@
     {
       "id": "5",
       "name": "Часы",
-      "price": "12000",
+      "price": 12500,
       "image_url": "https://plus.unsplash.com/premium_photo-1744471321853-5a3a8378c1fa?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "category": "Аксессуары",
-      "count": "10",
+      "count": 23,
       "published_at": "2023-09-30"
+    },
+    {
+      "id": "3d00",
+      "name": "Электрический чайник",
+      "price": 8000,
+      "image_url": "https://www.timberk.ru/upload/resize_cache/webp/iblock/bf3/700_700_0/x5q9gkd74s82w40113muf84oc4g14u9h.webp",
+      "category": "Электроника",
+      "count": 11,
+      "published_at": "2034-08-20 14:09"
+    },
+    {
+      "id": "6",
+      "name": "Игровая приставка",
+      "price": 33000,
+      "image_url": "https://images.unsplash.com/photo-1587202372775-98973a0c7f5c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "category": "Электроника",
+      "count": 7,
+      "published_at": "2023-10-10"
+    },
+    {
+      "id": "7",
+      "name": "Детский конструктор",
+      "price": 1500,
+      "image_url": "https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "category": "Игрушки",
+      "count": 18,
+      "published_at": "2023-10-12"
+    },
+    {
+      "id": "8",
+      "name": "Рюкзак",
+      "price": 2600,
+      "image_url": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "category": "Аксессуары",
+      "count": 22,
+      "published_at": "2023-10-01"
+    },
+    {
+      "id": "9",
+      "name": "Куртка демисезонная",
+      "price": 8900,
+      "image_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "category": "Одежда",
+      "count": 16,
+      "published_at": "2023-09-20"
+    },
+    {
+      "id": "10",
+      "name": "Настольная лампа",
+      "price": 3200,
+      "image_url": "https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "category": "Дом",
+      "count": 10,
+      "published_at": "2023-09-25"
+    },
+    {
+      "id": "11",
+      "name": "Пазлы 1000 деталей",
+      "price": 900,
+      "image_url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "category": "Игрушки",
+      "count": 27,
+      "published_at": "2023-10-14"
+    },
+    {
+      "id": "12",
+      "name": "Сумка женская",
+      "price": 3500,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Bag_%28AM_2003.4.22-7%29.jpg/640px-Bag_%28AM_2003.4.22-7%29.jpg",
+      "category": "Аксессуары",
+      "count": 12,
+      "published_at": "2023-10-11"
     }
   ],
   "sessions": [
     {
-      "id": "e280",
-      "hash": "0.15446711896071096958849011571146547794342041015625",
-      "user": {
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "8433",
-      "hash": "0.88401916623557075247674674756126478314399719238281",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "16ef",
-      "hash": "0.73545544951577435099920876382384449243545532226563",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "fb7d",
-      "hash": "0.84304096251649940363392943254439160227775573730469",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "5cbd",
-      "hash": "0.65647131378721623740091217769077047705650329589844",
-      "user": {
-        "id": "3011",
-        "login": "lexa",
-        "password": "qweqwe123",
-        "registerAt": "2043-12-31 05:28"
-      }
-    },
-    {
-      "id": "e1d3",
-      "hash": "0.80020767451713781248656687239417806267738342285156",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "b96b",
-      "hash": "0.64315697180133324373230152559699490666389465332031",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0
-      }
-    },
-    {
-      "id": "e6d4",
-      "hash": "0.06262471701388561129419940698426216840744018554688",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 9
-      }
-    },
-    {
-      "id": "2349",
-      "hash": "0.16977265985474065956850608927197754383087158203125",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 10
-      }
-    },
-    {
-      "id": "ee32",
-      "hash": "0.40369025252615031718050886411219835281372070312500",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 11
-      }
-    },
-    {
-      "id": "2811",
-      "hash": "0.30200361454814772521615395817207172513008117675781",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 14
-      }
-    },
-    {
-      "id": "0814",
-      "hash": "0.91022779415578991546453835326246917247772216796875",
+      "id": "ddd5",
+      "hash": "0.49621232757867117513228549796622246503829956054688",
       "user": {
         "id": "001",
         "login": "alexsey",
@@ -219,8 +198,44 @@
       }
     },
     {
-      "id": "38aa",
-      "hash": "0.89788550798340516223561280639842152595520019531250",
+      "id": "22fa",
+      "hash": "0.92219747052968270573103382048429921269416809082031",
+      "user": {
+        "id": "001",
+        "login": "alexsey",
+        "password": "qwerty123",
+        "registerAt": "15.09.2024",
+        "roleId": 0,
+        "totalProduct": 0
+      }
+    },
+    {
+      "id": "f63b",
+      "hash": "0.62021046568700688439434998144861310720443725585938",
+      "user": {
+        "id": "001",
+        "login": "alexsey",
+        "password": "qwerty123",
+        "registerAt": "15.09.2024",
+        "roleId": 0,
+        "totalProduct": 0
+      }
+    },
+    {
+      "id": "9d87",
+      "hash": "0.60057615522031504440292337676510214805603027343750",
+      "user": {
+        "id": "001",
+        "login": "alexsey",
+        "password": "qwerty123",
+        "registerAt": "15.09.2024",
+        "roleId": 0,
+        "totalProduct": 4
+      }
+    },
+    {
+      "id": "c204",
+      "hash": "0.23575932828259782425561752461362630128860473632813",
       "user": {
         "id": "001",
         "login": "alexsey",
@@ -231,164 +246,32 @@
       }
     },
     {
-      "id": "b076",
-      "hash": "0.26684440096326245139835009467788040637969970703125",
+      "id": "4b23",
+      "hash": "0.46254622611778506424684564990457147359848022460938",
       "user": {
         "id": "001",
         "login": "alexsey",
         "password": "qwerty123",
         "registerAt": "15.09.2024",
         "roleId": 0,
-        "totalProduct": 9
+        "totalProduct": 3
       }
     },
     {
-      "id": "dae8",
-      "hash": "0.21190894931161130543273429793771356344223022460938",
+      "id": "b50c",
+      "hash": "0.15945649139001050187403052404988557100296020507813",
       "user": {
         "id": "001",
         "login": "alexsey",
         "password": "qwerty123",
         "registerAt": "15.09.2024",
         "roleId": 0,
-        "totalProduct": 0
+        "totalProduct": 3
       }
     },
     {
-      "id": "26b1",
-      "hash": "0.29649843455426339033920157817192375659942626953125",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "390e",
-      "hash": "0.35099071526842084978170532849617302417755126953125",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": null
-      }
-    },
-    {
-      "id": "31fb",
-      "hash": "0.22532919318063182601008520578034222126007080078125",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "4d0c",
-      "hash": "0.80539529009265731218647488276474177837371826171875",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "2981",
-      "hash": "0.83205520379402697628279383934568613767623901367188",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 29
-      }
-    },
-    {
-      "id": "7875",
-      "hash": "0.73594645865776553428361239639343693852424621582031",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "9d64",
-      "hash": "0.17160813659614926329766149137867614626884460449219",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "1956",
-      "hash": "0.65010101177165369179533627175260335206985473632813",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "a561",
-      "hash": "0.50694957541036100856501889211358502507209777832031",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "3dc6",
-      "hash": "0.36038965220602658945381335797719657421112060546875",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "3125",
-      "hash": "0.85414145510926231530390850821277126669883728027344",
-      "user": {
-        "id": "001",
-        "login": "alexsey",
-        "password": "qwerty123",
-        "registerAt": "15.09.2024",
-        "roleId": 0,
-        "totalProduct": 0
-      }
-    },
-    {
-      "id": "0d63",
-      "hash": "0.54991836331526400272196042351424694061279296875000",
+      "id": "89c5",
+      "hash": "0.53602539075757249520393088459968566894531250000000",
       "user": {
         "id": "001",
         "login": "alexsey",
@@ -399,40 +282,73 @@
       }
     },
     {
-      "id": "402e",
-      "hash": "0.47214526586667515672957051720004528760910034179688",
+      "id": "2f7e",
+      "hash": "0.91399817637280511561925777641590684652328491210938",
       "user": {
         "id": "001",
         "login": "alexsey",
         "password": "qwerty123",
         "registerAt": "15.09.2024",
         "roleId": 0,
-        "totalProduct": 0
+        "totalProduct": 1
       }
     },
     {
-      "id": "422c",
-      "hash": "0.30180907264045964133458710421109572052955627441406",
+      "id": "9394",
+      "hash": "0.79230775887041704486080107017187401652336120605469",
       "user": {
         "id": "001",
         "login": "alexsey",
         "password": "qwerty123",
         "registerAt": "15.09.2024",
         "roleId": 0,
-        "totalProduct": 4
+        "totalProduct": 2
+      }
+    },
+    {
+      "id": "01d6",
+      "hash": "0.58289318229904973911459364899201318621635437011719",
+      "user": {
+        "id": "001",
+        "login": "alexsey",
+        "password": "qwerty123",
+        "registerAt": "15.09.2024",
+        "roleId": 0,
+        "totalProduct": 2
+      }
+    },
+    {
+      "id": "2cec",
+      "hash": "0.31669861374863961245296195556875318288803100585938",
+      "user": {
+        "id": "001",
+        "login": "alexsey",
+        "password": "qwerty123",
+        "registerAt": "15.09.2024",
+        "roleId": 0,
+        "totalProduct": 2
       }
     }
   ],
   "feedback": [],
   "basket": [
     {
-      "id": "2",
+      "id": "9",
       "quantity": 1,
       "user_id": "001",
-      "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "name": "Смартфон",
-      "count": "15",
-      "price": "25000"
+      "image_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "name": "Куртка демисезонная",
+      "count": 16,
+      "price": 8900
+    },
+    {
+      "id": "5",
+      "quantity": 1,
+      "user_id": "001",
+      "image_url": "https://plus.unsplash.com/premium_photo-1744471321853-5a3a8378c1fa?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "name": "Часы!",
+      "count": 99,
+      "price": 12500
     }
   ]
 }

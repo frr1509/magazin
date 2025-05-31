@@ -15,4 +15,9 @@ export const sessions = {
         }
         deleteSession(session.id);
     },
+
+    async access(hash, accesRoles) {
+        const dbSession = await getSession(hash);
+        return !!dbSession.user && accesRoles.includes(dbSession.user.roleId);
+    },
 };

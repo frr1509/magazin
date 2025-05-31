@@ -13,7 +13,7 @@ const BasketDeleteContainer = ({ className, userId, userLogin, children }) => {
     return (
         <button onClick={deleteBasket} className={className}>
             {children}
-            <Icon margin="0 0 0 10px" id="fa-trash-o" />
+            <Icon margin="0 0 0 10px" id="fa-trash-o" color="#000" />
         </button>
     );
 };

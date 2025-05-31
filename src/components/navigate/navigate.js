@@ -4,25 +4,32 @@ import styled from "styled-components";
 import { selectProduct } from "../../selectors";
 import { Icon } from "../icon/icon";
 
-const NavigateContainer = ({ className }) => {
+const NavigateRowContainer = ({ className }) => {
     const product = useSelector(selectProduct);
     const navigate = useNavigate();
     const productFlag = useMatch("/product/:id");
     const basketFlag = useMatch("/basket");
+    const AdminPanelFlag = useMatch("/admin");
     return (
         <div className={className}>
-            <Icon onClick={() => navigate(-1)} id="fa-long-arrow-left" />
+            <Icon
+                color="#000"
+                onClick={() => navigate(-1)}
+                id="fa-long-arrow-left"
+            />
             <ul className={className}>
                 <ol>
                     <Link to="/">Главная</Link>
                 </ol>
-                {basketFlag ? (
+                {basketFlag || AdminPanelFlag ? (
                     <>
                         <ol>
                             <span>/</span>
                         </ol>
                         <ol>
-                            <span>Корзина</span>
+                            <span>
+                                {AdminPanelFlag ? "Админ-панель" : "Корзина"}
+                            </span>
                         </ol>
                     </>
                 ) : (
@@ -50,7 +57,7 @@ const NavigateContainer = ({ className }) => {
     );
 };
 
-export const Navigate = styled(NavigateContainer)`
+export const NavigateRow = styled(NavigateRowContainer)`
     display: flex;
     align-items: center;
     & > ol > a {

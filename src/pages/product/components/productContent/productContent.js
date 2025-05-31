@@ -5,7 +5,7 @@ import {
     ErrorCount,
     H2,
     Icon,
-    Navigate,
+    NavigateRow,
 } from "../../../../components";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -44,7 +44,7 @@ const ProductContentContainer = ({
     };
     return (
         <div className={className}>
-            <Navigate />
+            <NavigateRow />
             <div className="product-nav"></div>
             <div className="product">
                 <div className="product-image">

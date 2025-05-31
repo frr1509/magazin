@@ -6,5 +6,5 @@ export * from "./H2/h2";
 export * from "./button/button";
 export * from "./count/count";
 export * from "./errorCount/errorCount";
-export * from "./navigate/navigate";
 export * from "./modal/modal";
+export * from "./navigate/navigate";

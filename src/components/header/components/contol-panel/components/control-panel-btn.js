@@ -13,7 +13,9 @@ const ControlPanelBtnContainer = ({
         <Link className={className} to={`${way}`}>
             <Icon id={`${icon}`} size="20px" />
             <div className="text">{children}</div>
-            <div className="product-quantity">{totalProduct}</div>
+            {children === "Корзина" ? (
+                <div className="product-quantity">{totalProduct}</div>
+            ) : null}
         </Link>
     );
 };
@@ -39,7 +41,7 @@ export const ControlPanelBtn = styled(ControlPanelBtnContainer)`
         font-size: 11px;
         font-weight: 700;
         display: ${({ totalProduct }) =>
-            totalProduct === 0 ? "none" : "block"};
+            totalProduct === 0 || totalProduct === null ? "none" : "block"};
     }
     & .text {
         font-size: 15px;

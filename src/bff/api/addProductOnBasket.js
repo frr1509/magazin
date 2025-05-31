@@ -1,4 +1,4 @@
-export const addProductOnBasket = (
+export const addProductOnBasket = async (
     counter,
     userId,
     imageUrl,

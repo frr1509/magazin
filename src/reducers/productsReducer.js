@@ -1,11 +1,11 @@
-const initialState = {};
+import { ACTION_TYPE } from "../actions";
+
+const initialState = [];
 
 export const productsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case action.type:
-            return {
-                ...state,
-            };
+        case ACTION_TYPE.SET_PRODUCTS_DATA:
+            return [...action.payload];
         default:
             return state;
     }

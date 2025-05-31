@@ -68,6 +68,7 @@ const BasketContentContainer = ({ className, userBasket }) => {
                                         margin="0 10px 0 0"
                                         size="18px"
                                         color=" #c5c4c4;"
+                                        colorHover="#000"
                                     />
                                     <div className="product-price-counter">
                                         <div className="product-price">
@@ -76,6 +77,7 @@ const BasketContentContainer = ({ className, userBasket }) => {
                                                 id="fa-rub"
                                                 size="15px"
                                                 margin="0 0 0 3px"
+                                                color="#000"
                                             />
                                         </div>
                                         <Count
@@ -89,6 +91,7 @@ const BasketContentContainer = ({ className, userBasket }) => {
                                                 id="fa-rub"
                                                 size="15px"
                                                 margin="0 0 0 3px"
+                                                color="#000"
                                             />
                                         </div>
                                     </div>

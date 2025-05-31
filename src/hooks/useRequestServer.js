@@ -17,6 +17,9 @@ export const useServerRequest = () => {
                 "setNewQuantity",
                 "removeProductFromBasket",
                 "removeBasket",
+                "addNewProduct",
+                "removeProduct",
+                "editProduct",
             ].includes(operation)
                 ? params
                 : [session, ...params];

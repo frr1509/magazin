@@ -11,7 +11,6 @@ export const removeProductFromBasket = async (
     userLogin,
     userId,
 ) => {
-    console.log(id)
     await deleteProductFromBasket(id);
     const user = await getUser(userLogin);
     const { totalProduct } = user;

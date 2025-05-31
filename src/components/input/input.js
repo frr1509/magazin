@@ -13,9 +13,10 @@ export const Input = styled(InputContainer)`
     padding: ${({ padding = "20px" }) => padding};
     font-size: ${({ fontSize = "18px" }) => fontSize};
     border: ${({ border = "none" }) => border};
-    background-color: ${({ backgroundcolor = "#fff" }) => backgroundcolor};
+    background: ${({ backgroundcolor = "#fff" }) => backgroundcolor};
     &: focus {
         outline: ${({ isfocused = true }) =>
-            isfocused ? "#40e0d0 solid 2px" : "none"};
+            isfocused ? "#1e2869 solid 1px" : "none"};
+        background: #fff;
     }
 `;

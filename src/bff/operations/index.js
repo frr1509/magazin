@@ -7,3 +7,8 @@ export * from "./loadProductFromBasket";
 export * from "./setNewQuantity";
 export * from "./removeProductFromBasket";
 export * from "./removeBasket";
+export * from "./fetchProducts";
+export * from "./addNewProduct";
+export * from "./removeProduct";
+export * from "./editProduct";
+export * from "./loadCategorys";
