@@ -29,10 +29,12 @@ export const ControlPanelBtn = styled(ControlPanelBtnContainer)`
     & > div {
         margin: 10px 0 0 0;
     }
+    position: relative;
+
     & .product-quantity {
-        position: fixed;
-        top: 9px;
-        right: 120px;
+        position: absolute;
+        top: -11px;
+        right: 3px;
         background-color: #fff;
         color: #1e2869;
         border-radius: 48%;

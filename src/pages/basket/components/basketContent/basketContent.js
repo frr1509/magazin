@@ -46,7 +46,7 @@ const BasketContentContainer = ({ className, userBasket }) => {
                                 <div className="product-info">
                                     <div className="product-img">
                                         <Link to={`/product/${id}`}>
-                                            <img src={imageUrl} alt={name} />
+                                            <img src={imageUrl} alt={""} />
                                         </Link>
                                     </div>
                                     <div className="name">
@@ -150,19 +150,22 @@ export const BasketContent = styled(BasketContentContainer)`
         height: 164px;
         width: 164px;
         margin: 0 15px 0 0;
-        padding: 0 10px;
         background-color: #c5c4c4;
         object-fit: cover;
+        border: 1px solid #000000;
     }
+
     & .name {
         width: 250px;
         color: #c5c4c4;
     }
+
     & .name > a {
         color: #c5c4c4;
         display: block;
         font-size: 25px;
     }
+
     & .name > a:hover {
         color: #000;
         transition: color 0.2s;

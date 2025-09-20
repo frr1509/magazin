@@ -99,6 +99,20 @@ export const ProductContent = styled(ProductContentContainer)`
         box-shadow: 0 2px 8px rgba(60, 75, 100, 0.04);
     }
 
+    & .product-image img:empty::before {
+        content: "No Image Available";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        width: 320px;
+        height: 400px;
+        font-size: 1.2rem;
+        color: #888;
+        background-color: #ddd;
+        text-align: center;
+    }
+
     & .product-info {
         text-align: center;
     }

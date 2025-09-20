@@ -4,6 +4,7 @@ import {
     AdminPanel,
     Authorization,
     Basket,
+    Main,
     Product,
     Registration,
 } from "./pages";
@@ -34,7 +35,7 @@ export const App = () => {
             <Header />
             <Content padding="100px 0" display="flex" jc="center">
                 <Routes>
-                    <Route path="/" element={<div>Главная</div>} />
+                    <Route path="/" element={<Main />} />
                     <Route path="/login" element={<Authorization />} />
                     <Route path="/register" element={<Registration />} />
                     <Route path="/admin" element={<AdminPanel />} />

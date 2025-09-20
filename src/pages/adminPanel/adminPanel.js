@@ -45,7 +45,7 @@ export const AdminPanel = styled(AdminPanelContainer)`
     }
 `;
 
-{
+
     /* <ProductForm
                 editProduct={editProduct}
                 categorys={categorys}
@@ -85,4 +85,4 @@ export const AdminPanel = styled(AdminPanelContainer)`
                     ),
                 )}
             </div> */
-}
+
