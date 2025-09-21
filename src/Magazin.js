@@ -42,7 +42,7 @@ export const App = () => {
                     <Route path="/product" element={<Product />} />
                     <Route path="/product/:id" element={<Product />} />
                     <Route path="/basket" element={<Basket />} />
-                    <Route path="/catalog" element={<div>Каталог</div>} />
+                    <Route path="/catalog/:name" element={<div>Каталог</div>} />
                 </Routes>
                 <Modal />
             </Content>

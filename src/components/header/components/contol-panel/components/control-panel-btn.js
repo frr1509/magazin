@@ -30,6 +30,11 @@ export const ControlPanelBtn = styled(ControlPanelBtnContainer)`
         margin: 10px 0 0 0;
     }
     position: relative;
+    color: #d4d4d4;
+
+    &:hover {
+        color: #ffffff;
+    }
 
     & .product-quantity {
         position: absolute;

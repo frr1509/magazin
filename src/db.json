@@ -6,7 +6,7 @@
       "password": "qwerty123",
       "register_at": "15.09.2024",
       "role_id": 0,
-      "total_product": 3
+      "total_product": 4
     },
     {
       "id": "3011",
@@ -441,8 +441,8 @@
       }
     },
     {
-      "id": "32b4",
-      "hash": "0.11871601252720176411514785286271944642066955566406",
+      "id": "52dc",
+      "hash": "0.12944140122840364082179576143971644341945648193359",
       "user": {
         "id": "001",
         "login": "alexsey",
@@ -451,27 +451,72 @@
         "roleId": 0,
         "totalProduct": 3
       }
+    },
+    {
+      "id": "ac0a",
+      "hash": "0.72119366674847384945934436473180539906024932861328",
+      "user": {
+        "id": "001",
+        "login": "alexsey",
+        "password": "qwerty123",
+        "registerAt": "15.09.2024",
+        "roleId": 0,
+        "totalProduct": 3
+      }
+    },
+    {
+      "id": "27d3",
+      "hash": "0.52068904016945194435095345397712662816047668457031",
+      "user": {
+        "id": "001",
+        "login": "alexsey",
+        "password": "qwerty123",
+        "registerAt": "15.09.2024",
+        "roleId": 0,
+        "totalProduct": 3
+      }
+    },
+    {
+      "id": "b838",
+      "hash": "0.98180573144053695511246360183577053248882293701172",
+      "user": {
+        "id": "001",
+        "login": "alexsey",
+        "password": "qwerty123",
+        "registerAt": "15.09.2024",
+        "roleId": 0,
+        "totalProduct": 4
+      }
     }
   ],
   "feedback": [],
   "basket": [
     {
-      "id": "c8ba",
-      "quantity": 2,
-      "user_id": "001",
-      "image_url": "#",
-      "name": "ccsa",
-      "count": 4,
-      "price": 2222
-    },
-    {
       "id": "2",
-      "quantity": 1,
+      "quantity": 2,
       "user_id": "001",
       "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "name": "Смартфон",
       "count": "15",
       "price": "25000"
+    },
+    {
+      "id": "4",
+      "quantity": 1,
+      "user_id": "001",
+      "image_url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "name": "Кроссовки",
+      "count": "25",
+      "price": "4500"
+    },
+    {
+      "id": "3d00",
+      "quantity": 1,
+      "user_id": "001",
+      "image_url": "https://www.timberk.ru/upload/resize_cache/webp/iblock/bf3/700_700_0/x5q9gkd74s82w40113muf84oc4g14u9h.webp",
+      "name": "Электрический чайник",
+      "count": 11,
+      "price": 8000
     }
   ]
 }

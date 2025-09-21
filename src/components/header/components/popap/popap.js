@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useLockBodyScroll } from "../../../../hooks";
+import { PopapContent } from "./components";
 
 const PopapContainer = ({ className, open, setOpen }) => {
     useLockBodyScroll(open, "header");
@@ -10,9 +11,10 @@ const PopapContainer = ({ className, open, setOpen }) => {
             onClick={() => setOpen(false)}
             open={open}
         >
-            <div className="popap" onClick={(e) => e.stopPropagation()}>
+            {/* <div className="popap" onClick={(e) => e.stopPropagation()}>
                 <h2>Это попап!</h2>
-            </div>
+            </div> */}
+            <PopapContent open={open} setOpen={setOpen} />
         </div>
     );
 };
@@ -30,21 +32,4 @@ export const Popap = styled(PopapContainer)`
     opacity: ${({ open }) => (open ? 1 : 0)};
     pointer-events: ${({ open }) => (open ? "auto" : "none")};
     transition: opacity 0.3s;
-
-    & .popap {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background: #fff;
-        padding: 20px;
-        width: 300px;
-        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
-        transform: ${({ open }) =>
-            open ? "translateX(0)" : "translateX(-100%)"};
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        will-change: transform;
-        display: flex;
-        flex-direction: column;
-    }
 `;

@@ -8,6 +8,7 @@ import { ProductForm, Table } from "./components";
 import { H2, NavigateRow } from "../../components";
 
 const AdminPanelContainer = ({ className }) => {
+    const categorys = useSelector(selectCategorys);
     const [editProduct, setEditProduct] = useState(null);
     const dispatch = useDispatch();
     const requestServer = useServerRequest();
@@ -17,7 +18,6 @@ const AdminPanelContainer = ({ className }) => {
         dispatch(loadCategorysAsync(requestServer));
     }, [dispatch, requestServer]);
 
-    const categorys = useSelector(selectCategorys);
     return (
         <div className={className}>
             <div>

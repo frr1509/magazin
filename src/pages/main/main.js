@@ -8,7 +8,6 @@ import { ProductCard } from "./components";
 
 const MianContainer = ({ className }) => {
     const products = useSelector(selectProducts);
-    console.log(products);
     const requestServer = useServerRequest();
     const dispatch = useDispatch();
 

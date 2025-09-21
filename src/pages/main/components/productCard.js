@@ -16,6 +16,7 @@ const ProductCardContainer = ({ className, id, name, price, imageUrl }) => {
 };
 
 export const ProductCard = styled(ProductCardContainer)`
+    color: #5c5c5cff;
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -23,9 +24,11 @@ export const ProductCard = styled(ProductCardContainer)`
     box-shadow: 0 4px 24px rgba(60, 75, 100, 0.07);
     padding: 16px;
     margin: 20px;
-    width: calc(20% - 10px);
+    width: calc(16% - 20px);
+    max-height: 380px;
 
     &:hover {
+        color: #000;
         transform: scale(1.05);
         transition:
             transform 0.5s,
@@ -67,17 +70,9 @@ export const ProductCard = styled(ProductCardContainer)`
         margin-top: auto;
     }
 
-    & .product-info h3 {
-        color: #d4d4d4;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: all 0.3s;
-    }
-
     & .product-price {
         margin: 8px 0;
         font-size: 1rem;
-        color: rgb(0, 0, 0);
         font-weight: bold;
     }
 

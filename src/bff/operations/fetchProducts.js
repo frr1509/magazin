@@ -13,7 +13,6 @@ export const fetchProducts = async (hash) => {
     //     };
     // }
     const products = await getProducts();
-
     return {
         error: null,
         res: products,

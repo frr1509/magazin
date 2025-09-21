@@ -26,7 +26,11 @@ const StyledDiv = styled.div`
     & > div {
         margin: 10px 0 0 0;
     }
-    color: #fff;
+    color: #d4d4d4;
+
+    &:hover {
+        color: #fff;
+    }
 `;
 
 const ControlPanelContainer = ({ className }) => {
